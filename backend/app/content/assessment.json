@@ -1,0 +1,34 @@
+{
+  "items": [
+    {"id": "r1", "skill": "reading", "difficulty": 1, "type": "multiple_choice", "instructions": "Which hiragana is 'a'?", "choices": ["あ", "お", "め", "ぬ"], "answer": "あ"},
+    {"id": "r1b", "skill": "reading", "difficulty": 1, "type": "multiple_choice", "instructions": "How is this read?", "prompt_ja": "か", "choices": ["ka", "ki", "ku", "ke"], "answer": "ka"},
+    {"id": "r2", "skill": "reading", "difficulty": 2, "type": "multiple_choice", "instructions": "How is this word read?", "prompt_ja": "すし", "choices": ["sushi", "susa", "shisu", "sasi"], "answer": "sushi"},
+    {"id": "r2b", "skill": "reading", "difficulty": 2, "type": "multiple_choice", "instructions": "How is this katakana word read?", "prompt_ja": "テレビ", "choices": ["terebi", "kamera", "keeki", "koohii"], "answer": "terebi"},
+    {"id": "r3", "skill": "reading", "difficulty": 3, "type": "multiple_choice", "instructions": "How is this kanji word read?", "prompt_ja": "日本", "choices": ["にほん", "にちほん", "ひもと", "じつほん"], "answer": "にほん"},
+    {"id": "r4", "skill": "reading", "difficulty": 4, "type": "multiple_choice", "instructions": "How is this kanji word read?", "prompt_ja": "毎日", "choices": ["まいにち", "めいにち", "まいび", "ごとにち"], "answer": "まいにち"},
+
+    {"id": "v1", "skill": "vocabulary", "difficulty": 1, "type": "multiple_choice", "instructions": "What does this mean?", "prompt_ja": "ありがとう", "choices": ["thank you", "hello", "sorry", "goodbye"], "answer": "thank you"},
+    {"id": "v2", "skill": "vocabulary", "difficulty": 2, "type": "multiple_choice", "instructions": "What does this mean?", "prompt_ja": "水 (みず)", "choices": ["water", "fire", "tree", "rice"], "answer": "water"},
+    {"id": "v3", "skill": "vocabulary", "difficulty": 3, "type": "multiple_choice", "instructions": "What does this mean?", "prompt_ja": "駅 (えき)", "choices": ["station", "school", "shop", "hospital"], "answer": "station"},
+    {"id": "v4", "skill": "vocabulary", "difficulty": 4, "type": "multiple_choice", "instructions": "What does this mean?", "prompt_ja": "便利 (べんり)", "choices": ["convenient", "difficult", "quiet", "expensive"], "answer": "convenient"},
+
+    {"id": "g1", "skill": "grammar", "difficulty": 1, "type": "multiple_choice", "instructions": "Choose the missing particle: 'I am a student.'", "prompt_ja": "私＿学生です。", "choices": ["は", "を", "で", "に"], "answer": "は"},
+    {"id": "g2", "skill": "grammar", "difficulty": 2, "type": "multiple_choice", "instructions": "Choose the missing particle: 'I eat bread.'", "prompt_ja": "パン＿食べます。", "choices": ["を", "に", "で", "と"], "answer": "を"},
+    {"id": "g3", "skill": "grammar", "difficulty": 3, "type": "multiple_choice", "instructions": "Choose the polite past negative of 行きます ('didn't go').", "choices": ["行きませんでした", "行きました", "行きません", "行かないでした"], "answer": "行きませんでした"},
+    {"id": "g4", "skill": "grammar", "difficulty": 4, "type": "multiple_choice", "instructions": "Choose: 'Please wait.'", "choices": ["待ってください", "待ちてください", "待ったください", "待つてください"], "answer": "待ってください"},
+
+    {"id": "l1", "skill": "listening", "difficulty": 1, "type": "listening_choice", "instructions": "Listen. What does it mean?", "audio_text": "こんにちは", "choices": ["Hello", "Thank you", "Good night", "Excuse me"], "answer": "Hello"},
+    {"id": "l2", "skill": "listening", "difficulty": 2, "type": "listening_choice", "instructions": "Listen. What is being asked for?", "audio_text": "コーヒーをください。", "choices": ["Coffee, please.", "Tea, please.", "Water, please.", "Bread, please."], "answer": "Coffee, please."},
+    {"id": "l3", "skill": "listening", "difficulty": 3, "type": "listening_choice", "instructions": "Listen. What did the speaker say?", "audio_text": "昨日、映画を見ました。", "choices": ["I watched a movie yesterday.", "I will watch a movie tomorrow.", "I don't watch movies.", "I watched TV yesterday."], "answer": "I watched a movie yesterday."},
+    {"id": "l4", "skill": "listening", "difficulty": 4, "type": "listening_choice", "instructions": "Listen. What did the speaker say?", "audio_text": "駅まで歩いて十分ぐらいです。", "choices": ["It's about a ten-minute walk to the station.", "The station is ten minutes away by train.", "The station is far from here.", "There are ten stations."], "answer": "It's about a ten-minute walk to the station."},
+
+    {"id": "w1", "skill": "writing", "difficulty": 1, "type": "typed_japanese", "instructions": "Type 'hello' in Japanese.", "prompt_en": "Hello", "answer": "こんにちは", "accepted_answers": ["今日は", "こんにちわ"]},
+    {"id": "w2", "skill": "writing", "difficulty": 2, "type": "en_to_ja", "instructions": "Translate into Japanese.", "prompt_en": "I am a student.", "answer": "私は学生です。", "accepted_answers": ["わたしはがくせいです。", "わたしは学生です。", "私はがくせいです。", "学生です。", "がくせいです。"]},
+    {"id": "w3", "skill": "writing", "difficulty": 3, "type": "en_to_ja", "instructions": "Translate into Japanese.", "prompt_en": "I drank coffee yesterday.", "answer": "昨日コーヒーを飲みました。", "accepted_answers": ["きのうコーヒーをのみました。", "昨日、コーヒーを飲みました。", "昨日コーヒーをのみました。", "きのうコーヒーを飲みました。"]},
+    {"id": "w4", "skill": "writing", "difficulty": 4, "type": "en_to_ja", "instructions": "Translate into Japanese.", "prompt_en": "Please wait a moment.", "answer": "ちょっと待ってください。", "accepted_answers": ["ちょっとまってください。", "少し待ってください。", "少々お待ちください。"]},
+
+    {"id": "s1", "skill": "speaking", "difficulty": 1, "type": "speaking", "instructions": "Say 'thank you' in Japanese.", "prompt_en": "Thank you", "answer": "ありがとうございます", "accepted_answers": ["ありがとう", "どうもありがとうございます"]},
+    {"id": "s2", "skill": "speaking", "difficulty": 2, "type": "speaking", "instructions": "Introduce yourself: say your name followed by です (for example 'わたしは アナ です').", "prompt_en": "I am [your name].", "answer": "わたしは〇〇です", "meta": {"required_substrings": ["です"]}},
+    {"id": "s3", "skill": "speaking", "difficulty": 3, "type": "speaking", "instructions": "Say: 'I go to school every day.'", "prompt_en": "I go to school every day.", "answer": "毎日学校に行きます。", "accepted_answers": ["まいにちがっこうにいきます。", "毎日学校へ行きます。", "毎日、学校に行きます。"]}
+  ]
+}
