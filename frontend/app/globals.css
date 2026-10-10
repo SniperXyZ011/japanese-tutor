@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1f2430;
+  --color-paper: #faf8f4;
+  --color-brand: #c2410c;
+  --color-brand-dark: #9a3412;
+  --color-brand-soft: #fff1e8;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  --font-jp: "Hiragino Mincho ProN", "Noto Serif JP", "Yu Mincho", "Hiragino Sans", "Noto Sans JP", serif;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.jp {
+  font-family: var(--font-jp);
+  line-height: 1.6;
+}
+
+ruby rt {
+  font-size: 0.5em;
+  color: #6b7280;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}

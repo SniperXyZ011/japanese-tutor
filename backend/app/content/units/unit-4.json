@@ -1,0 +1,88 @@
+{
+  "unit": {"id": "unit-4", "position": 4, "title": "Everyday situations", "level": "N5",
+    "description": "Order food, count items, ask for the bill and ask for directions."},
+  "vocabulary": [
+    {"id": "v-irasshaimase", "japanese": "いらっしゃいませ", "reading": "いらっしゃいませ", "romaji": "irasshaimase", "meaning": "welcome (said by shop/restaurant staff)", "part_of_speech": "expression"},
+    {"id": "v-onegaishimasu", "japanese": "お願いします", "reading": "おねがいします", "romaji": "onegaishimasu", "meaning": "please (when requesting)", "part_of_speech": "expression"},
+    {"id": "v-hitotsu", "japanese": "一つ", "reading": "ひとつ", "romaji": "hitotsu", "meaning": "one (item)", "part_of_speech": "counter"},
+    {"id": "v-futatsu", "japanese": "二つ", "reading": "ふたつ", "romaji": "futatsu", "meaning": "two (items)", "part_of_speech": "counter"},
+    {"id": "v-okaikei", "japanese": "お会計", "reading": "おかいけい", "romaji": "okaikei", "meaning": "the bill, the check", "part_of_speech": "noun"},
+    {"id": "v-eki", "japanese": "駅", "reading": "えき", "romaji": "eki", "meaning": "station", "part_of_speech": "noun"},
+    {"id": "v-doko", "japanese": "どこ", "reading": "どこ", "romaji": "doko", "meaning": "where", "part_of_speech": "question word"},
+    {"id": "v-toire", "japanese": "トイレ", "reading": "といれ", "romaji": "toire", "meaning": "toilet, restroom", "part_of_speech": "noun"},
+    {"id": "v-migi", "japanese": "右", "reading": "みぎ", "romaji": "migi", "meaning": "right (direction)", "part_of_speech": "noun"},
+    {"id": "v-hidari", "japanese": "左", "reading": "ひだり", "romaji": "hidari", "meaning": "left (direction)", "part_of_speech": "noun"},
+    {"id": "v-asoko", "japanese": "あそこ", "reading": "あそこ", "romaji": "asoko", "meaning": "over there", "part_of_speech": "pronoun"}
+  ],
+  "grammar": [
+    {"id": "g-tsu-counter", "name": "General counter 〜つ", "pattern": "[thing] を [number]つ お願いします",
+      "explanation": "Japanese counts things with counters. ひとつ, ふたつ, みっつ... is a general counter for objects and orders. The count usually comes right before the verb.",
+      "examples": [{"japanese": "すしを二つお願いします。", "reading": "すしをふたつおねがいします。", "english": "Two sushi, please."}]},
+    {"id": "g-doko", "name": "Where is ...?", "pattern": "[place] は どこですか",
+      "explanation": "どこ means 'where'. Start with すみません to politely get someone's attention.",
+      "examples": [{"japanese": "すみません、駅はどこですか。", "reading": "すみません、えきはどこですか。", "english": "Excuse me, where is the station?"}]}
+  ],
+  "lessons": [
+    {
+      "id": "u4-l1", "position": 1, "title": "Ordering food",
+      "summary": "Order in a café or restaurant, count items and ask for the bill.",
+      "objectives": ["Understand いらっしゃいませ", "Order with を [number]つ お願いします", "Ask for the bill"],
+      "prerequisites": ["u3-l2"], "difficulty": 2, "estimated_minutes": 12,
+      "vocabulary_ids": ["v-irasshaimase", "v-onegaishimasu", "v-hitotsu", "v-futatsu", "v-okaikei"], "grammar_ids": ["g-tsu-counter"],
+      "exercises": [
+        {"type": "presentation", "skill": "listening", "instructions": "Listen and repeat.",
+          "prompt_ja": "すしを二つお願いします。", "prompt_reading": "すしをふたつおねがいします。", "prompt_romaji": "Sushi o futatsu onegaishimasu.",
+          "prompt_en": "Two sushi, please.", "audio_text": "すしを二つお願いします。", "concept_ids": ["g-tsu-counter", "v-futatsu", "v-onegaishimasu"],
+          "explanation": "お願いします is a polite way to request something, common when ordering."},
+        {"type": "listening_choice", "skill": "listening", "instructions": "You walk into a shop and hear this. What does it mean?",
+          "audio_text": "いらっしゃいませ。", "choices": ["Welcome!", "Thank you!", "Excuse me.", "Goodbye."], "answer": "Welcome!",
+          "concept_ids": ["v-irasshaimase"], "explanation": "Staff say いらっしゃいませ to greet customers. You don't need to reply."},
+        {"type": "multiple_choice", "skill": "vocabulary", "instructions": "How do you say 'one (item)' when ordering?",
+          "choices": ["ひとつ", "ふたつ", "いち", "ひとり"], "answer": "ひとつ",
+          "concept_ids": ["v-hitotsu"], "explanation": "いち is the number 1; ひとつ counts one item; ひとり counts one person."},
+        {"type": "en_to_ja", "skill": "writing", "instructions": "Translate into Japanese.",
+          "prompt_en": "One coffee, please.", "answer": "コーヒーを一つお願いします。",
+          "accepted_answers": ["コーヒーをひとつおねがいします。", "コーヒーをひとつお願いします。", "コーヒーを一つください。", "コーヒーをひとつください。", "コーヒー一つお願いします。", "コーヒーひとつください。"],
+          "concept_ids": ["g-tsu-counter", "v-hitotsu"], "explanation": "コーヒーを一つお願いします。 ください also works."},
+        {"type": "ja_to_en", "skill": "vocabulary", "instructions": "Translate into English.",
+          "prompt_ja": "お会計をお願いします。", "prompt_reading": "おかいけいをおねがいします。", "audio_text": "お会計をお願いします。",
+          "answer": "The check, please.", "accepted_answers": ["check please", "the bill please", "bill please", "can i have the bill", "can i have the check", "can i have the bill please", "can i have the check please"],
+          "concept_ids": ["v-okaikei", "v-onegaishimasu"], "explanation": "お会計 = the bill/check."},
+        {"type": "speaking", "skill": "speaking", "instructions": "Order two coffees politely.",
+          "prompt_en": "Two coffees, please.", "audio_text": "コーヒーを二つお願いします。", "answer": "コーヒーを二つお願いします。",
+          "accepted_answers": ["コーヒーをふたつおねがいします。", "コーヒーをふたつお願いします。", "コーヒーを二つください。", "コーヒーをふたつください。", "コーヒーを2つお願いします。", "コーヒーを2つください。"],
+          "concept_ids": ["g-tsu-counter", "v-futatsu"], "explanation": "fu-ta-tsu: the u in ふ and つ is light."}
+      ]
+    },
+    {
+      "id": "u4-l2", "position": 2, "title": "Asking for directions",
+      "summary": "Ask where places are and understand simple directions.",
+      "objectives": ["Ask where something is with どこですか", "Understand 右, 左 and あそこ"],
+      "prerequisites": ["u4-l1"], "difficulty": 2, "estimated_minutes": 10,
+      "vocabulary_ids": ["v-eki", "v-doko", "v-toire", "v-migi", "v-hidari", "v-asoko"], "grammar_ids": ["g-doko"],
+      "exercises": [
+        {"type": "presentation", "skill": "listening", "instructions": "Listen and repeat.",
+          "prompt_ja": "すみません、駅はどこですか。", "prompt_reading": "すみません、えきはどこですか。", "prompt_romaji": "Sumimasen, eki wa doko desu ka.",
+          "prompt_en": "Excuse me, where is the station?", "audio_text": "すみません、駅はどこですか。", "concept_ids": ["g-doko", "v-eki", "v-doko"],
+          "explanation": "Start with すみません to get someone's attention politely."},
+        {"type": "presentation", "skill": "listening", "instructions": "Listen to the answer.",
+          "prompt_ja": "駅はあそこです。", "prompt_reading": "えきはあそこです。", "prompt_romaji": "Eki wa asoko desu.",
+          "prompt_en": "The station is over there.", "audio_text": "駅はあそこです。", "concept_ids": ["v-asoko"],
+          "explanation": "あそこ = over there (far from both speakers)."},
+        {"type": "listening_choice", "skill": "listening", "instructions": "Where is it?",
+          "audio_text": "トイレは左です。", "choices": ["The toilet is on the left.", "The toilet is on the right.", "The station is on the left.", "The toilet is over there."],
+          "answer": "The toilet is on the left.", "concept_ids": ["v-toire", "v-hidari"], "explanation": "左 (ひだり) = left."},
+        {"type": "multiple_choice", "skill": "vocabulary", "instructions": "Which word means 'right' (direction)?",
+          "choices": ["右", "左", "駅", "何"], "answer": "右", "concept_ids": ["v-migi"], "explanation": "右 = みぎ (right), 左 = ひだり (left)."},
+        {"type": "en_to_ja", "skill": "writing", "instructions": "Translate into Japanese.",
+          "prompt_en": "Where is the toilet?", "answer": "トイレはどこですか。",
+          "accepted_answers": ["すみません、トイレはどこですか。", "お手洗いはどこですか。", "といれはどこですか。"],
+          "concept_ids": ["g-doko", "v-toire"], "explanation": "トイレはどこですか。 お手洗い is a more polite word for toilet."},
+        {"type": "speaking", "skill": "speaking", "instructions": "Ask where the station is.",
+          "prompt_en": "Where is the station?", "audio_text": "駅はどこですか。", "answer": "駅はどこですか。",
+          "accepted_answers": ["えきはどこですか。", "すみません、駅はどこですか。", "すみません、えきはどこですか。"],
+          "concept_ids": ["g-doko", "v-eki"], "explanation": "e-ki wa do-ko de-su ka."}
+      ]
+    }
+  ]
+}

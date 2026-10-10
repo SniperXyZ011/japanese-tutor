@@ -1,0 +1,85 @@
+{
+  "unit": {"id": "unit-5", "position": 5, "title": "Early conversational ability", "level": "N5",
+    "description": "Talk about likes, make requests with the て-form and suggest plans with ましょう."},
+  "vocabulary": [
+    {"id": "v-suki", "japanese": "好き", "reading": "すき", "romaji": "suki", "meaning": "liked, to like", "part_of_speech": "na-adjective"},
+    {"id": "v-eiga", "japanese": "映画", "reading": "えいが", "romaji": "eiga", "meaning": "movie, film", "part_of_speech": "noun"},
+    {"id": "v-machimasu", "japanese": "待ちます", "reading": "まちます", "romaji": "machimasu", "meaning": "to wait", "part_of_speech": "verb"},
+    {"id": "v-chotto", "japanese": "ちょっと", "reading": "ちょっと", "romaji": "chotto", "meaning": "a little, a moment", "part_of_speech": "adverb"},
+    {"id": "v-issho", "japanese": "一緒に", "reading": "いっしょに", "romaji": "issho ni", "meaning": "together", "part_of_speech": "adverb"}
+  ],
+  "grammar": [
+    {"id": "g-suki", "name": "[thing] が好きです", "pattern": "[thing] が 好きです",
+      "explanation": "好き is a な-adjective meaning 'liked'. The thing you like is marked with が, not を: すしが好きです = 'I like sushi'.",
+      "examples": [{"japanese": "すしが好きです。", "reading": "すしがすきです。", "english": "I like sushi."},
+        {"japanese": "映画が好きですか。", "reading": "えいががすきですか。", "english": "Do you like movies?"}]},
+    {"id": "g-te-kudasai", "name": "Requests: て-form + ください", "pattern": "[verb て-form] ください",
+      "explanation": "To ask someone to do something politely, use the て-form + ください. 食べます → 食べて, 見ます → 見て, 飲みます → 飲んで, 待ちます → 待って, 行きます → 行って (irregular).",
+      "examples": [{"japanese": "ちょっと待ってください。", "reading": "ちょっとまってください。", "english": "Please wait a moment."}]},
+    {"id": "g-mashou", "name": "Let's: ましょう", "pattern": "[verb stem] ましょう",
+      "explanation": "Replace ます with ましょう to suggest doing something together: 'Let's ...'.",
+      "examples": [{"japanese": "一緒に行きましょう。", "reading": "いっしょにいきましょう。", "english": "Let's go together."}]}
+  ],
+  "lessons": [
+    {
+      "id": "u5-l1", "position": 1, "title": "Likes and preferences",
+      "summary": "Say what you like and ask others about their preferences with が好きです.",
+      "objectives": ["Say what you like with が好きです", "Ask others what they like"],
+      "prerequisites": ["u4-l2"], "difficulty": 3, "estimated_minutes": 10,
+      "vocabulary_ids": ["v-suki", "v-eiga"], "grammar_ids": ["g-suki"],
+      "exercises": [
+        {"type": "presentation", "skill": "listening", "instructions": "Listen and repeat.",
+          "prompt_ja": "すしが好きです。", "prompt_reading": "すしがすきです。", "prompt_romaji": "Sushi ga suki desu.", "prompt_en": "I like sushi.",
+          "audio_text": "すしが好きです。", "concept_ids": ["g-suki", "v-suki"], "explanation": "The u in すき is often barely pronounced: s'ki."},
+        {"type": "multiple_choice", "skill": "grammar", "instructions": "Choose the missing particle: 'I like coffee.'",
+          "prompt_ja": "コーヒー＿好きです。", "choices": ["が", "を", "で", "に"], "answer": "が",
+          "concept_ids": ["g-suki"], "explanation": "好き takes が for the thing liked."},
+        {"type": "ja_to_en", "skill": "vocabulary", "instructions": "Translate into English.",
+          "prompt_ja": "映画が好きですか。", "prompt_reading": "えいががすきですか。", "audio_text": "映画が好きですか。",
+          "answer": "Do you like movies?", "accepted_answers": ["do you like films", "do you like movie", "do you like film", "do you like cinema"],
+          "concept_ids": ["g-suki", "v-eiga"], "explanation": "映画 (えいが) = movie."},
+        {"type": "en_to_ja", "skill": "writing", "instructions": "Translate into Japanese.",
+          "prompt_en": "I like Japanese (the language).", "answer": "日本語が好きです。",
+          "accepted_answers": ["にほんごがすきです。", "日本語がすきです。", "私は日本語が好きです。", "わたしはにほんごがすきです。"],
+          "concept_ids": ["g-suki", "v-nihongo"], "explanation": "日本語が好きです。"},
+        {"type": "speaking", "skill": "speaking", "instructions": "Say: 'I like coffee.'",
+          "prompt_en": "I like coffee.", "audio_text": "コーヒーが好きです。", "answer": "コーヒーが好きです。",
+          "accepted_answers": ["コーヒーがすきです。", "私はコーヒーが好きです。"], "concept_ids": ["g-suki", "v-koohii"],
+          "explanation": "koo-hii ga su-ki de-su."}
+      ]
+    },
+    {
+      "id": "u5-l2", "position": 2, "title": "Requests and plans",
+      "summary": "Make polite requests with て-form + ください and suggest plans with ましょう.",
+      "objectives": ["Make polite requests with てください", "Suggest doing something together with ましょう"],
+      "prerequisites": ["u5-l1"], "difficulty": 3, "estimated_minutes": 15,
+      "vocabulary_ids": ["v-machimasu", "v-chotto", "v-issho"], "grammar_ids": ["g-te-kudasai", "g-mashou"],
+      "exercises": [
+        {"type": "presentation", "skill": "listening", "instructions": "Listen and repeat.",
+          "prompt_ja": "ちょっと待ってください。", "prompt_reading": "ちょっとまってください。", "prompt_romaji": "Chotto matte kudasai.",
+          "prompt_en": "Please wait a moment.", "audio_text": "ちょっと待ってください。", "concept_ids": ["g-te-kudasai", "v-machimasu", "v-chotto"],
+          "explanation": "待ちます → 待って. The small っ is a short pause."},
+        {"type": "presentation", "skill": "listening", "instructions": "Listen and repeat.",
+          "prompt_ja": "一緒に映画を見ましょう。", "prompt_reading": "いっしょにえいがをみましょう。", "prompt_romaji": "Issho ni eiga o mimashou.",
+          "prompt_en": "Let's watch a movie together.", "audio_text": "一緒に映画を見ましょう。", "concept_ids": ["g-mashou", "v-issho"],
+          "explanation": "見ます → 見ましょう (let's watch)."},
+        {"type": "multiple_choice", "skill": "grammar", "instructions": "What is the て-form of 飲みます?",
+          "choices": ["飲んで", "飲みて", "飲って", "飲いて"], "answer": "飲んで",
+          "concept_ids": ["g-te-kudasai", "v-nomimasu"], "explanation": "Verbs ending in み (飲みます) change to んで."},
+        {"type": "multiple_choice", "skill": "grammar", "instructions": "Choose: 'Please eat.'",
+          "choices": ["食べてください。", "食べますください。", "食べたください。", "食べるください。"], "answer": "食べてください。",
+          "concept_ids": ["g-te-kudasai", "v-tabemasu"], "explanation": "食べます → 食べて + ください."},
+        {"type": "listening_choice", "skill": "listening", "instructions": "What is the speaker suggesting?",
+          "audio_text": "一緒に行きましょう。", "choices": ["Let's go together.", "Please go.", "I went together.", "Let's eat together."],
+          "answer": "Let's go together.", "concept_ids": ["g-mashou", "v-issho"], "explanation": "行きましょう = let's go."},
+        {"type": "en_to_ja", "skill": "writing", "instructions": "Translate into Japanese.",
+          "prompt_en": "Please look.", "answer": "見てください。", "accepted_answers": ["みてください。"],
+          "concept_ids": ["g-te-kudasai", "v-mimasu"], "explanation": "見ます → 見て + ください."},
+        {"type": "speaking", "skill": "speaking", "instructions": "Invite a friend: 'Let's watch a movie together.'",
+          "prompt_en": "Let's watch a movie together.", "audio_text": "一緒に映画を見ましょう。", "answer": "一緒に映画を見ましょう。",
+          "accepted_answers": ["いっしょにえいがをみましょう。", "一緒に映画をみましょう。", "映画を見ましょう。"],
+          "concept_ids": ["g-mashou", "v-eiga"], "explanation": "is-sho ni ei-ga o mi-ma-shou."}
+      ]
+    }
+  ]
+}
